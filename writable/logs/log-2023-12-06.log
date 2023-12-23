@@ -1,0 +1,52 @@
+CRITICAL - 2023-12-06 04:53:32 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 999.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+CRITICAL - 2023-12-06 04:57:28 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 999.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+CRITICAL - 2023-12-06 04:57:33 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 999.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+CRITICAL - 2023-12-06 04:57:35 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 999.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+CRITICAL - 2023-12-06 04:57:53 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 999.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+INFO - 2023-12-06 05:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 06:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 09:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 09:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 09:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 13:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,29 @@
+## create project
+
+***composer create-project codeigniter4/appstarter ci_project2
+
+*php spark serve (to start the project in browser)
+*php spark make:controller About  (to create new componenet files in controlller)
+*php spark make:model ProductModel  (to create new componenet files in Model)
+*php spark make:migration products1_migration    (to create new componenet files in   migration of database) after changing data of  migration the command will be (php spark migrate)
+
+
+### steps:
+1 to create component with command
+2 to add the component folder name in the view folder in the view folder
+3 to add the routing folder in the Routing folder
+
+#database name should be put on the file....
+  database.php 
+
+
+  #crud Example link
+
+  https://phpforever.com/codeigniterexample/codeigniter-4-crud-example/#google_vignette
+
+
+  ##Authentication and authorization example crud link:
+  https://www.positronx.io/codeigniter-authentication-login-and-registration-tutorial/
+
+  ##### stepes: how to deploy codeigniter 4 
+  https://www.ozar.net/blog/web-development-php/codeigniter/ci4-production-deployment

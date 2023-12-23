@@ -1,0 +1,39 @@
+INFO - 2023-12-21 03:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 03:26:23 --> Undefined variable $data
+in APPPATH\Views\dashboard.php on line 30.
+ 1 APPPATH\Views\dashboard.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-21 03:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 03:26:44 --> Undefined variable $data
+in APPPATH\Views\dashboard.php on line 30.
+ 1 APPPATH\Views\dashboard.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-21 03:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 03:26:45 --> Undefined variable $data
+in APPPATH\Views\dashboard.php on line 30.
+ 1 APPPATH\Views\dashboard.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(11): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')

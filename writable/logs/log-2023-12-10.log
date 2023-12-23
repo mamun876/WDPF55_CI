@@ -1,0 +1,271 @@
+INFO - 2023-12-10 03:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:18:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'wdpf55_ci_proje...', 3306, '', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Controllers\SigninController.php(23): CodeIgniter\BaseModel->first()
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(942): App\Controllers\SigninController->login()
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Controllers\SigninController.php(23): CodeIgniter\BaseModel->first()
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(942): App\Controllers\SigninController->login()
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-10 03:18:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\SigninController.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 03:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 03:36:42 --> mysqli_sql_exception: Unknown column 'category' in 'field list' in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Database\Seeds\ProductSeeder.php(25): CodeIgniter\Model->insert(Array)
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 F:\XAMPP\htdocs\WDPF55_CI\CI_project\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-12-10 03:38:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wdpf55_ci_project1`.`products`, CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Database\Seeds\ProductSeeder.php(25): CodeIgniter\Model->insert(Array)
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 F:\XAMPP\htdocs\WDPF55_CI\CI_project\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-12-10 03:39:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wdpf55_ci_project1`.`products`, CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Database\Seeds\ProductSeeder.php(25): CodeIgniter\Model->insert(Array)
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 F:\XAMPP\htdocs\WDPF55_CI\CI_project\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-12-10 03:39:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wdpf55_ci_project1`.`products`, CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Database\Seeds\ProductSeeder.php(25): CodeIgniter\Model->insert(Array)
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 F:\XAMPP\htdocs\WDPF55_CI\CI_project\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+INFO - 2023-12-10 03:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 03:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:55:31 --> Undefined array key "photo"
+in APPPATH\Views\products\index.php on line 102.
+ 1 APPPATH\Views\products\index.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', 'F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\products\\index.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\products\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/index', [], true)
+ 5 APPPATH\Controllers\Product.php(22): view('products/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 03:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-10 03:56:06 --> Undefined array key "photo"
+in APPPATH\Views\products\index.php on line 102.
+ 1 APPPATH\Views\products\index.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', 'F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\products\\index.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\app\\Views\\products\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/index', [], true)
+ 5 APPPATH\Controllers\Product.php(22): view('products/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 03:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 04:08:47 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(NULL, false)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Controllers\Product.php(89): CodeIgniter\BaseModel->delete()
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(942): App\Controllers\Product->delete('4')
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-10 04:08:47 --> Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Controllers\Product.php(89): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Product->delete('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 04:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 04:08:54 --> mysqli_sql_exception: Unknown column 'products.product_id' in 'where clause' in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '4')
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Controllers\Product.php(65): CodeIgniter\BaseModel->find('4')
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(942): App\Controllers\Product->edit('4')
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-10 04:08:54 --> Unknown column 'products.product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `products`.`product_id` = :products.product_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '4')
+ 4 APPPATH\Controllers\Product.php(65): CodeIgniter\BaseModel->find('4')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Product->edit('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 04:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 04:08:57 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(NULL, false)
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Controllers\Product.php(89): CodeIgniter\BaseModel->delete()
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(942): App\Controllers\Product->delete('4')
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-10 04:08:57 --> Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Controllers\Product.php(89): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Product->delete('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\XAMPP\\htdocs\\WDPF55_CI\\CI_project\\public\\index.php')
+INFO - 2023-12-10 04:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 04:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-10 06:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-10 06:02:26 --> mysqli_sql_exception: Table 'category' already exists in F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `c...', 0)
+#1 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 F:\XAMPP\htdocs\WDPF55_CI\CI_project\app\Database\Migrations\2023-12-09-043508_CreateCategoryTable.php(25): CodeIgniter\Database\Forge->createTable('category')
+#5 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreateCategoryTable->up()
+#6 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 F:\XAMPP\htdocs\WDPF55_CI\CI_project\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 F:\XAMPP\htdocs\WDPF55_CI\CI_project\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
